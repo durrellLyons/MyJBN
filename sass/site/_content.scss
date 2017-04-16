@@ -1,0 +1,101 @@
+main {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  @include blockElement;
+  width: 99%;
+  background-color: $whiteBackgroundColor;
+  &::after {
+      @include clearfix;
+  }
+
+  @media (min-width: $query__mobile) {
+    height: 400px;
+    overflow-y: visible;
+    article {
+      width: 100%;
+    }
+    padding:0;
+  }
+
+  @media (min-width: $query__tablet) {
+    height: 475px;
+    article {
+      width: 68%;
+    }
+
+    overflow-y: hidden;
+  }
+
+  @media (min-width: $query__desktop) {
+    height: 500px;
+    padding: 5em 0;
+    width: 100%;
+  }
+
+  article {
+    float: left;
+    &::after {
+      @include clearfix;
+    }
+  }
+}
+
+.content {
+  margin: 0 auto;
+  &::after {
+    @include clearfix;
+  }
+  background-color: $blueColor;
+
+  @media(min-width: $query__mobile) {
+    width: 100%;
+  }
+
+  @media (min-width:$query__desktop) {
+    max-width: 1280px;
+    padding: 1em;
+  }
+
+  aside {
+    text-align: center;
+    background-color: $blueColor;
+    float:left;
+    @include blockElement;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+
+    @media (min-width: $query__mobile) {
+      width: 100%;
+      &::after {
+          @include clearfix;
+      }
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (min-width: $query__tablet) {
+      width: 27%;
+      height: 475px;
+      padding: 2em 1em;
+    }
+
+    @media (min-width: $query__desktop) {
+      height: 500px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+iframe {
+  @media (min-width: $query__mobile) {
+      height: 475px;
+      width: 100%;
+      max-width: 960px;
+  }
+}

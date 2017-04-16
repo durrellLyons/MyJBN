@@ -1,0 +1,31 @@
+header {
+  position: relative;
+  margin:0;
+  padding: 0;
+  padding: 1em 0;
+}
+
+@media (min-width: $query__mobile) {
+
+  .mobileLogo {
+    width: 50%;
+    display: block;
+    margin-left: 1em;
+  }
+
+  .fullLogo {
+    display: none;
+  }
+}
+
+@media (min-width: $query__desktop) {
+  .mobileLogo {
+    display: none;
+  }
+
+  .fullLogo {
+    display: block;
+    width: 20%;
+    padding: 1em;
+  }
+}

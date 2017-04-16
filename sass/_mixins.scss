@@ -1,0 +1,12 @@
+// Clearfix
+@mixin clearfix {
+	content: "";
+	display: table;
+	table-layout: fixed;
+	clear:both;
+}
+
+// BlockElement
+@mixin blockElement {
+  margin: 0 auto;
+}
