@@ -414,7 +414,8 @@ nav {
   position: absolute;
   top: 1em;
   right: 0em;
-  color: rgba(240, 240, 240, 0.9); }
+  color: rgba(240, 240, 240, 0.9);
+  font-size: 1.2em; }
   nav .navicon {
     float: right;
     color: #001984;
@@ -433,24 +434,28 @@ nav {
       cursor: pointer; }
       nav ul li a {
         text-decoration: none;
-        color: #001984; }
-        nav ul li a:hover, nav ul li a:focus {
-          color: rgba(240, 240, 240, 0.9); }
+        color: rgba(240, 240, 240, 0.9); }
   @media (min-width: 900px) {
     nav .desktopNav {
       display: inline-block;
       right: 0em;
-      width: 37em;
+      width: 45em;
       background-color: #ffffff;
       color: #001984;
-      font-size: 1em;
       top: 2em; }
       nav .desktopNav li {
         display: inline;
         padding: 0.5em; }
         nav .desktopNav li:focus, nav .desktopNav li:hover {
           background-color: #001984;
-          color: rgba(240, 240, 240, 0.9); } }
+          color: rgba(240, 240, 240, 0.9);
+          padding: 2em 0.5em; }
+          nav .desktopNav li:focus a, nav .desktopNav li:hover a {
+            color: rgba(240, 240, 240, 0.9); }
+        nav .desktopNav li a {
+          color: #001984; }
+        nav .desktopNav li:last-child {
+          border: none; } }
 
 /*--------------------------------------------------------------
 # Content

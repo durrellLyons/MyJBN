@@ -1,7 +1,7 @@
 function navMenu() {
   $('.navicon').click(function() {
     if($(this).hasClass('fa-bars')) {
-      toggleMenu('-1em', '10em', '3em', 'block');
+      toggleMenu('-1em', '15em', '2em', 'block');
       $(this).removeClass('fa-bars');
       $(this).addClass('fa-times');
     } else if($(this).hasClass('fa-times')) {

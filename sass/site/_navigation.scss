@@ -3,6 +3,7 @@ nav {
   top: 1em;
   right: 0em;
   color: $whiteBackgroundColor;
+  font-size: 1.2em;
 
   .navicon {
     float: right;
@@ -27,11 +28,7 @@ nav {
 
       a {
         text-decoration: none;
-        color: $blueColor;
-        &:hover,
-        &:focus {
-          color: $whiteBackgroundColor;
-        }
+        color: $whiteBackgroundColor;
       }
     }
   }
@@ -40,10 +37,9 @@ nav {
     .desktopNav {
       display: inline-block;
       right: 0em;
-      width: 37em;
+      width: 45em;
       background-color: #ffffff;
       color: $blueColor;
-      font-size: 1em;
       top: 2em;
 
       li {
@@ -53,6 +49,18 @@ nav {
         &:hover {
           background-color: $blueColor;
           color: $whiteBackgroundColor;
+          padding: 2em 0.5em;
+          a {
+              color: $whiteBackgroundColor;
+            }
+        }
+
+        a {
+            color: $blueColor;
+        }
+
+        &:last-child {
+          border: none;
         }
       }
     }
